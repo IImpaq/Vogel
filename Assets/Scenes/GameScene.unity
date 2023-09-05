@@ -5752,6 +5752,7 @@ GameObject:
   - component: {fileID: 1386583178}
   - component: {fileID: 1386583177}
   - component: {fileID: 1386583176}
+  - component: {fileID: 1386583179}
   m_Layer: 10
   m_Name: Bird
   m_TagString: Untagged
@@ -5825,7 +5826,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
 --- !u!50 &1386583175
 Rigidbody2D:
   serializedVersion: 4
@@ -5867,6 +5868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 1386583175}
   flapStrength: 20
+  animation: {fileID: 1386583179}
 --- !u!58 &1386583177
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5937,6 +5939,23 @@ CapsuleCollider2D:
   m_Offset: {x: -0.01, y: -0.24}
   m_Size: {x: 4.85, y: 2.91}
   m_Direction: 1
+--- !u!111 &1386583179
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386583172}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 324799bc0b70fb44db3ffe96910bd880, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 324799bc0b70fb44db3ffe96910bd880, type: 2}
+  - {fileID: 7400000, guid: 332ecb11c7d5527449361384530d5ddf, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1441506793
 GameObject:
   m_ObjectHideFlags: 0
